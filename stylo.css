@@ -9,19 +9,20 @@ body{
     background:
         url(./img/robotPng.webp) no-repeat,
         linear-gradient(to left, #373737, white); 
-    background-size: 768px 480px, cover;
-    background-position: left 167px;
+    background-size: 921.6px 576px, cover;
+    background-position: left bottom;
     color: black;
     height: 100vh;
     box-sizing: border-box;
 }
 
 .titulos{
-    height: 100px;
+    height: 110px;
     display: flex;
     flex-flow: column wrap;
     justify-content: end;
-    align-items: center;
+    align-items: start;
+    margin-left: 80px;
 }
 
 .titulo__Principal{
@@ -50,9 +51,9 @@ textarea{
     display: flex;
     flex-flow: row wrap;
     justify-content: right;
-    align-items: center;
+    align-items: start;
     gap: 50px;
-    margin-right: 200px;
+    margin-right: 70px;
 }
 
 button{
@@ -86,17 +87,14 @@ footer {
     bottom: 0;
     width: 100%;
     height: 50px;
-    background-color: #373737;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(1px);
     color: black;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center
 }
-
-
-
-
 
 /*.contenedorPadreMain{
     display: flex;
