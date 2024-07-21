@@ -1,3 +1,59 @@
+//Manejo del DOM//
+
+let inputText = document.getElementById('inputText');
+let botonEncriptar = document.getElementById('encriptar');
+let botonDesencriptar = document.getElementById('desencriptar');
+let outputText = document.getElementById('outputText');
+let botonCopiar = document.getElementById('copiar');
+let imagenOutputText = document.getElementById('imagen__outputText')
+
+botonEncriptar.onclick = function (){
+    let textoEncriptado = encriptar(inputText.value);
+    console.log(`el mensaje encriptado es: "${textoEncriptado}"`);
+    outputText.value = textoEncriptado;
+};
+
+botonDesencriptar.onclick = function (){
+    let textoDesencriptado = desencriptar(inputText.value);
+    console.log(`el mensaje desencriptado es: ${textoDesencriptado}`);
+    outputText.value = textoDesencriptado;
+}
+
+inputText.addEventListener ('input', function(){
+    if(this.value === ""){
+        outputText.value = "";
+    }
+});
+
+outputText.addEventListener ('input', function(){
+    if (this.value === ""){
+        inputText.value = "";
+    }
+});
+
+botonCopiar.onclick = function (){
+    let textoCopiado = outputText.value;
+    navigator.clipboard.writeText(textoCopiado);
+}
+    
+
+
+/*
+function imgApareceDesaparece() {
+    if (outputText.value === "") {
+        outputText.style.display = "none";
+        imagenOutputText.style.display = "block";
+    } else {
+        outputText.style.display = "block";
+        imagenOutputText.style.display = "none";
+    }
+}
+*/
+
+
+
+//--------------función para encriptar!---------------//
+
 function encriptar (textoUsuario){
     let arrayParaEncriptar = textoUsuario.split("");
     for (let i = 0; i < arrayParaEncriptar.length; i++){
@@ -23,11 +79,14 @@ function encriptar (textoUsuario){
     return arrayParaEncriptar.join("");
 }
 
-let textoDelUsuario = "hola buenas tardes";
-let textoEncriptado = encriptar(textoDelUsuario);
-console.log(`el mensaje secreto es: "${textoEncriptado}"`)
+//-----------Función para Desencriptar-----------//
 
-
-function desencriptar (textoEncriptado){
-
+function desencriptar(textoEncriptado) {
+    let textoDesencriptado = textoEncriptado.split("ufat").join("u");
+    textoDesencriptado = textoDesencriptado.split("ober").join("o");
+    textoDesencriptado = textoDesencriptado.split("imes").join("i");
+    textoDesencriptado = textoDesencriptado.split("enter").join("e");
+    textoDesencriptado = textoDesencriptado.split("ai").join("a");
+    
+    return textoDesencriptado;
 }
