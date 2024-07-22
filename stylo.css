@@ -3,6 +3,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -13,7 +14,6 @@ body{
     background-position: left bottom;
     color: black;
     height: 100vh;
-    box-sizing: border-box;
 }
 
 .titulos{
@@ -109,11 +109,45 @@ footer {
     justify-content: center
 }
 
-/*.contenedorPadreMain{
-    display: flex;
-    flex-flow: row-reverse wrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 645px;
-} */
+@media (max-width: 768px) {
+    .titulos {
+        margin-left: 20px;
+    }
+    .titulo__Principal {
+        font-size: 35px;
+    }
+    .subtitulo {
+        font-size: 16px;
+    }
+    .formularios {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20px;
+    }
+    textarea {
+        width: 80%;
+        height: 250px;
+    }
+    input {
+        width: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulos {
+        margin-left: 10px;
+    }
+    .titulo__Principal {
+        font-size: 28px;
+    }
+    .subtitulo {
+        font-size: 14px;
+    }
+    textarea {
+        width: 90%;
+        height: 200px;
+    }
+    input {
+        width: 80px;
+    }
+}
