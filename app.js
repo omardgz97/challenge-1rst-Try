@@ -1,11 +1,11 @@
 //-------------------Manejo del DOM----------------------------//
 
-let inputText = document.getElementById('inputText');
-let botonEncriptar = document.getElementById('encriptar');
-let botonDesencriptar = document.getElementById('desencriptar');
-let outputText = document.getElementById('outputText');
-let botonCopiar = document.getElementById('copiar');
-let imagenOutputText = document.getElementById('imagen__outputText')
+const inputText = document.getElementById('inputText');
+const botonEncriptar = document.getElementById('encriptar');
+const botonDesencriptar = document.getElementById('desencriptar');
+const outputText = document.getElementById('outputText');
+const botonCopiar = document.getElementById('copiar');
+const imagenOutputText = document.getElementById('imagen__outputText')
 
 //----------------------Eventos!-------------------------------//
 

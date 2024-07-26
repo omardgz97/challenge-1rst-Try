@@ -6,54 +6,58 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 62.5%
+}
+
 body{
     background:
         url(./img/robotPng.webp) no-repeat,
         linear-gradient(to left, #373737, white); 
-    background-size: 921.6px 576px, cover;
+    background-size: 92.16rem 57.6rem, cover;
     background-position: left bottom;
     color: black;
     height: 100vh;
 }
 
 .titulos{
-    height: 110px;
+    height: 11rem;
     display: flex;
     flex-flow: column wrap;
     justify-content: end;
     align-items: start;
-    margin-left: 80px;
+    margin-left: 8rem;
 }
 
 .titulo__Principal{
     font-family: "Chakra Petch", sans-serif;
-    font-size: 50px;
+    font-size: 5rem;
 }
 
 .subtitulo{
     font-family: "Chakra Petch", sans-serif;
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 textarea{
-    width: 300px;
-    height: 430px;
-    font-size: 16px;
-    padding: 10px;
-    border: 2px solid black;
-    border-radius: 10px;
+    width: 30rem;
+    height: 43rem;
+    font-size: 1.6rem;
+    padding: 1rem;
+    border: .2rem solid black;
+    border-radius: 1rem;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(1px);
 }
 
 .formularios{
-    height: 545.2px;
+    height: 54.52rem;
     display: flex;
     flex-flow: row wrap;
     justify-content: right;
     align-items: start;
-    gap: 50px;
-    margin-right: 70px;
+    gap: 5rem;
+    margin-right: 7rem;
 }
 
 .output__Text{
@@ -70,15 +74,15 @@ textarea{
 }
 
 input{
-    width: 150px;
-    height: 35px;
-    margin-top: 10px;
-    border-radius: 16px;
+    width: 15rem;
+    height: 3.5rem;
+    margin-top: 1rem;
+    border-radius: 1.6rem;
     background-color: #000000;
     color: white;
     font-family: "Chakra Petch", sans-serif;
-    font-size: 15px;
-    border: 4px solid #092327;
+    font-size: 1.5rem;
+    border: .4rem solid #092327;
 }
 
 .input__Buttons{
@@ -99,7 +103,7 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 50px;
+    height: 5rem;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(1px);
     color: black;
@@ -108,6 +112,7 @@ footer {
     align-items: center;
     justify-content: center
 }
+
 
 @media (max-width: 768px) {
     .titulos {
